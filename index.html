@@ -7,14 +7,14 @@
   <title>ECOVACS India — Flagship Smart Home Robotics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --white: #ffffff;
       --surface: #F8FAFC;
       --navy: #0B192C;
-      --blue: #163E7A;
-      --blue-hover: #0F2D59;
+      --blue: #184586;
+      --blue-hover: #113263;
       --accent: #2563EB;
       --tint: #EFF4FB;
       --line: #E2E8F0;
@@ -163,7 +163,7 @@
 
     nav a:hover {
       color: var(--blue);
-      background-color: rgba(22, 62, 122, 0.05);
+      background-color: rgba(24, 69, 134, 0.05);
     }
 
     nav a:hover::after {
@@ -198,7 +198,7 @@
       background: var(--blue-hover);
       border-color: var(--blue-hover);
       transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(22, 62, 122, .2)
+      box-shadow: 0 6px 16px rgba(24, 69, 134, .2)
     }
 
     .btn:active {
@@ -335,7 +335,7 @@
     /* Section Spacing & Centered Larger Headings */
     .screen {
       border-top: 1px solid var(--line);
-      padding: 44px 0
+      padding: 48px 0
     }
 
     .screen.alt {
@@ -381,7 +381,7 @@
       display: block;
       font-size: 16px;
       font-weight: 500;
-      color: var(--accent);
+      color: var(--blue);
     }
 
     .sec-meta {
@@ -396,7 +396,7 @@
       font-weight: 700;
       letter-spacing: .08em;
       text-transform: uppercase;
-      color: var(--accent)
+      color: var(--blue)
     }
 
     /* Grids & Cards */
@@ -437,7 +437,7 @@
     .card:hover {
       border-color: #93C5FD;
       background: linear-gradient(180deg, #FFFFFF 0%, #F8FBFF 100%);
-      box-shadow: 0 10px 24px rgba(22, 62, 122, .08);
+      box-shadow: 0 10px 24px rgba(24, 69, 134, .08);
       transform: translateY(-2px);
     }
 
@@ -506,7 +506,7 @@
     }
 
     .stat:hover {
-      border-left-color: var(--accent);
+      border-left-color: var(--blue);
       background: linear-gradient(135deg, #FFFFFF 0%, #EFF6FF 100%);
     }
 
@@ -542,7 +542,7 @@
       border: 1px solid #DBEAFE;
       border-radius: 999px;
       padding: 12px 24px;
-      box-shadow: 0 4px 16px rgba(22, 62, 122, .04);
+      box-shadow: 0 4px 16px rgba(24, 69, 134, .04);
     }
 
     .ribbon-label {
@@ -669,7 +669,7 @@
 
     .exp-info:hover {
       border-color: #93C5FD;
-      box-shadow: 0 10px 26px rgba(22, 62, 122, .07)
+      box-shadow: 0 10px 26px rgba(24, 69, 134, .07)
     }
 
     .exp-info-top {
@@ -755,7 +755,7 @@
 
     .session-card:hover {
       border-color: #BFDBFE;
-      box-shadow: 0 12px 30px rgba(22, 62, 122, .07)
+      box-shadow: 0 12px 30px rgba(24, 69, 134, .07)
     }
 
     .session-card h3 {
@@ -827,15 +827,6 @@
       line-height: 1.3;
     }
 
-    .field-group input.brand-readonly {
-      background: #EEF3FA;
-      border-color: #D8E2F0;
-      color: var(--blue);
-      font-weight: 600;
-      letter-spacing: .04em;
-      cursor: default;
-    }
-
     .confirm-btn {
       margin-top: 4px;
       width: fit-content;
@@ -854,7 +845,7 @@
     .confirm-btn:hover {
       background: var(--blue-hover);
       transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(22, 62, 122, .22);
+      box-shadow: 0 6px 16px rgba(24, 69, 134, .22);
     }
 
     .form-status {
@@ -877,7 +868,7 @@
 
     .map-card:hover {
       border-color: #BFDBFE;
-      box-shadow: 0 12px 30px rgba(22, 62, 122, .07)
+      box-shadow: 0 12px 30px rgba(24, 69, 134, .07)
     }
 
     .map-frame {
@@ -926,7 +917,7 @@
     .map-overlay-tag span {
       font-size: 11.5px;
       font-weight: 600;
-      color: var(--accent)
+      color: var(--blue)
     }
 
     /* Customer Testimonials Carousel */
@@ -958,7 +949,7 @@
 
     .t-card:hover {
       border-color: #93C5FD;
-      box-shadow: 0 10px 24px rgba(22, 62, 122, .07);
+      box-shadow: 0 10px 24px rgba(24, 69, 134, .07);
       transform: translateY(-2px);
     }
 
@@ -1288,7 +1279,6 @@
         font-size: 13px;
       }
 
-      /* Curated Lineup Single-Column */
       .c4 {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -1308,24 +1298,6 @@
         height: 40px;
       }
 
-      /* Matcher Card & Stacked Actions */
-      .panel-card {
-        padding: 16px;
-      }
-
-      .match-actions {
-        flex-direction: column;
-        gap: 8px;
-        width: 100%;
-      }
-
-      .match-actions .btn {
-        width: 100%;
-        height: 42px;
-        justify-content: center;
-      }
-
-      /* Footer Bottom */
       .copy-r {
         flex-direction: column;
         align-items: center;
@@ -1367,7 +1339,6 @@
       width: 100%;
     }
 
-    /* Section Header */
     .why-header {
       text-align: center;
       margin-bottom: 24px;
@@ -1394,7 +1365,6 @@
       letter-spacing: 0.03em;
     }
 
-    /* 5x2 Resting Bento Grid -> 5x3 Exact-Fit Expanded Bento Grid (Zero Empty Cells) */
     .bento-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -1403,7 +1373,6 @@
       gap: 16px;
     }
 
-    /* Card Base */
     .bento-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
@@ -1427,7 +1396,6 @@
       box-shadow: 0 14px 32px rgba(24, 69, 134, 0.12);
     }
 
-    /* Expanded 2x2 Active Card (4 cells) */
     .bento-card.is-expanded {
       grid-column: span 2;
       grid-row: span 2;
@@ -1436,7 +1404,6 @@
       z-index: 2;
     }
 
-    /* Companion Wide Cards (each 2x1) to keep 5-column grid 100% full with zero gaps */
     .bento-card.is-companion {
       grid-column: span 2;
       flex-direction: row;
@@ -1449,7 +1416,6 @@
       min-width: 0;
     }
 
-    /* Visual Box with Image + Icon Badge */
     .card-visual {
       width: 100%;
       height: 92px;
@@ -1525,7 +1491,6 @@
       height: 19px;
     }
 
-    /* Titles & Copy */
     .card-title {
       font-size: 1rem;
       font-weight: 700;
@@ -1533,7 +1498,6 @@
       line-height: 1.3;
     }
 
-    /* Expanded Live Details (Hidden in resting state to keep eye calm) */
     .card-expanded-details {
       display: none;
       margin-top: 8px;
@@ -1588,7 +1552,6 @@
       }
     }
 
-    /* Responsive Breakpoints */
     @media (max-width: 1024px) {
       .bento-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1633,428 +1596,948 @@
       }
     }
 
-    /* Find Your Ideal Cleaner / Weather Matcher */
-    .matcher-shell {
+    /* Find Your Ideal Cleaner — Glassmorphic Asymmetric Spotlight */
+    .ideal-cleaner-wrap {
+      --ic-navy: #184586;
+      --ic-navy-dark: #113263;
+      --ic-navy-soft: rgba(24, 69, 134, 0.08);
+      --ic-navy-border: rgba(24, 69, 134, 0.2);
+      --ic-glass-bg: rgba(255, 255, 255, 0.82);
+      --ic-glass-hero: rgba(255, 255, 255, 0.92);
+      --ic-glass-subtle: rgba(248, 250, 255, 0.82);
+      --ic-border: rgba(24, 69, 134, 0.12);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(24, 69, 134, 0.08), transparent 42%),
+        radial-gradient(circle at 86% 72%, rgba(24, 69, 134, 0.08), transparent 46%),
+        #f5f8fc;
+      border: 1px solid #DBEAFE;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 14px 36px rgba(24, 69, 134, 0.06);
+    }
+
+    .ic-grid {
       display: grid;
-      grid-template-columns: 1.05fr 1.15fr;
-      gap: var(--gap);
+      grid-template-columns: 0.88fr 1.22fr;
+      gap: 24px;
       align-items: stretch;
     }
 
-    .panel-card {
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
+    .ic-glass-card {
+      background: var(--ic-glass-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.88);
+      box-shadow: 0 12px 32px rgba(24, 69, 134, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
       padding: 24px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .ic-hero-card {
+      background: var(--ic-glass-hero);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1.5px solid var(--ic-navy-border);
+      box-shadow: 0 20px 48px rgba(24, 69, 134, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .ic-card-header {
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--ic-border);
+    }
+
+    .ic-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ic-navy);
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    .ic-panel-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.015em;
+      margin-bottom: 3px;
+    }
+
+    .ic-panel-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    .ic-step-block {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--ic-border);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .ic-step-block:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .ic-step-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .ic-step-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .ic-step-hint {
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .ic-floor-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .ic-floor-pill {
+      border: 1.5px solid var(--ic-navy-border);
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--text);
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .ic-floor-pill:hover {
+      border-color: var(--ic-navy);
+      background: var(--ic-navy-soft);
+    }
+
+    .ic-floor-pill.active {
+      background: var(--ic-navy);
+      border-color: var(--ic-navy);
+      color: #ffffff;
+    }
+
+    .ic-custom-floor-box {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 2px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: var(--ic-glass-subtle);
+      border: 1px solid var(--ic-navy-border);
+    }
+
+    .ic-custom-floor-box.visible {
+      display: flex;
+    }
+
+    .ic-custom-floor-box label {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ic-navy);
+    }
+
+    .ic-custom-floor-input {
+      width: 100%;
+      padding: 8px 11px;
+      border-radius: 9px;
+      border: 1.5px solid var(--ic-navy-border);
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text);
+      font-size: 12.5px;
+      outline: none;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .ic-custom-floor-input:focus {
+      border-color: var(--ic-navy);
+      box-shadow: 0 0 0 3px rgba(24, 69, 134, 0.12);
+    }
+
+    .ic-mess-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 9px;
+    }
+
+    .ic-mess-btn {
+      text-align: left;
+      border: 1.5px solid var(--ic-navy-border);
+      background: rgba(255, 255, 255, 0.78);
+      border-radius: 12px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .ic-mess-btn:hover {
+      border-color: var(--ic-navy);
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    .ic-mess-btn.active {
+      border-color: var(--ic-navy);
+      background: var(--ic-navy-soft);
+      box-shadow: inset 0 0 0 1px var(--ic-navy);
+    }
+
+    .ic-mess-title {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+
+    .ic-mess-sub {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .ic-budget-pill {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--ic-navy);
+      background: var(--ic-navy-soft);
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    input[type="range"].ic-budget-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 7px;
+      border-radius: 999px;
+      background: linear-gradient(to right,
+          var(--ic-navy) 0%,
+          var(--ic-navy) var(--fill, 100%),
+          rgba(24, 69, 134, 0.14) var(--fill, 100%),
+          rgba(24, 69, 134, 0.14) 100%);
+      outline: none;
+      cursor: pointer;
+    }
+
+    input[type="range"].ic-budget-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--ic-navy);
+      border: 3px solid #ffffff;
+      box-shadow: 0 2px 8px rgba(24, 69, 134, 0.35);
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    input[type="range"].ic-budget-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.08);
+    }
+
+    .ic-budget-ticks {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    .ic-care-tip {
+      margin-top: 14px;
+      background: var(--ic-glass-subtle);
+      border: 1px solid var(--ic-navy-border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 12px;
+      color: var(--text);
+    }
+
+    .ic-care-tip strong {
+      color: var(--ic-navy);
+      display: block;
+      font-size: 10.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .ic-empty-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 36px 24px;
+      border-radius: 16px;
+      border: 1.5px dashed var(--ic-navy-border);
+      background: radial-gradient(circle at center, rgba(24, 69, 134, 0.05), rgba(248, 250, 255, 0.78));
+      gap: 12px;
+      min-height: 410px;
+    }
+
+    .ic-empty-box[hidden] {
+      display: none;
+    }
+
+    .ic-empty-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: var(--ic-navy-soft);
+      border: 1px solid var(--ic-navy-border);
+      color: var(--ic-navy);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .ic-empty-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .ic-empty-copy {
+      max-width: 440px;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    .ic-checklist {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .ic-check-chip {
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--ic-navy-border);
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--muted);
+    }
+
+    .ic-check-chip.done {
+      background: var(--ic-navy);
+      border-color: var(--ic-navy);
+      color: #ffffff;
+    }
+
+    .ic-matched-box {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 18px;
+      height: 100%;
     }
 
-    .panel-header h3 {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1.3;
-      margin-top: 4px;
+    .ic-matched-box[hidden] {
+      display: none;
     }
 
-    .panel-header p {
-      font-size: 13px;
-      color: var(--muted);
-      margin-top: 4px;
-    }
-
-    /* Custom Hover + Click Dropdown */
-    .concern-dropdown {
-      position: relative;
-      width: 100%;
-    }
-
-    .concern-trigger {
-      width: 100%;
-      min-height: 52px;
-      padding: 10px 14px;
-      background: var(--tint);
-      border: 1px solid #BFDBFE;
-      border-radius: 10px;
+    .ic-hero-top {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      cursor: pointer;
-      text-align: left;
-      transition: all 0.2s ease;
+      gap: 10px;
     }
 
-    .concern-dropdown:hover .concern-trigger,
-    .concern-dropdown.open .concern-trigger {
-      background: var(--white);
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
-    }
-
-    .trigger-labels strong {
-      display: block;
-      font-size: 13.5px;
-      font-weight: 700;
-      color: var(--navy);
-    }
-
-    .trigger-labels span {
-      display: block;
-      font-size: 11.5px;
-      color: var(--muted);
-    }
-
-    .trigger-icon {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--blue);
-      transition: transform 0.2s ease;
-    }
-
-    .concern-dropdown:hover .trigger-icon,
-    .concern-dropdown.open .trigger-icon {
-      transform: rotate(180deg);
-    }
-
-    .concern-menu {
-      position: absolute;
-      top: calc(100% + 6px);
-      left: 0;
-      right: 0;
-      z-index: 25;
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 6px;
-      box-shadow: 0 16px 34px rgba(11, 25, 44, 0.14);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-6px);
-      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
-    }
-
-    .concern-dropdown:hover .concern-menu,
-    .concern-dropdown.open .concern-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .concern-option {
-      width: 100%;
-      border: none;
-      background: transparent;
-      border-radius: 8px;
-      padding: 10px 12px;
-      text-align: left;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      transition: background-color 0.15s ease;
-    }
-
-    .concern-option:hover,
-    .concern-option.active {
-      background: var(--tint);
-    }
-
-    .concern-option strong {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--navy);
-    }
-
-    .concern-option span {
-      font-size: 11.5px;
-      color: var(--muted);
-    }
-
-    /* Custom SVG Scenario Visual */
-    .scenario-box {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: var(--surface);
-      border: 1px solid #DBEAFE;
-      border-radius: 12px;
-      padding: 12px 14px;
-    }
-
-    .scenario-svg {
-      width: 92px;
-      height: 74px;
-      flex-shrink: 0;
-    }
-
-    .scenario-text b {
-      display: block;
+    .ic-best-badge {
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: var(--blue);
-      margin-bottom: 2px;
+      color: #ffffff;
+      background: var(--ic-navy);
+      padding: 5px 12px;
+      border-radius: 999px;
     }
 
-    .scenario-text span {
-      display: block;
-      font-size: 12.5px;
-      color: var(--text);
-      line-height: 1.45;
-    }
-
-    @keyframes driftSpeck {
-
-      0%,
-      100% {
-        transform: translate(0px, 0px);
-        opacity: 0.9;
-      }
-
-      50% {
-        transform: translate(3px, -5px);
-        opacity: 0.35;
-      }
-    }
-
-    @keyframes fallRain {
-      0% {
-        transform: translateY(-3px);
-        opacity: 0.9;
-      }
-
-      100% {
-        transform: translateY(7px);
-        opacity: 0.15;
-      }
-    }
-
-    @keyframes rippleWave {
-      0% {
-        transform: scale(0.94);
-        opacity: 0.85;
-      }
-
-      100% {
-        transform: scale(1.08);
-        opacity: 0.25;
-      }
-    }
-
-    .svg-speck {
-      animation: driftSpeck 2.5s ease-in-out infinite;
-    }
-
-    .svg-rain {
-      animation: fallRain 1.3s linear infinite;
-    }
-
-    .svg-ripple {
-      transform-origin: center;
-      animation: rippleWave 2s ease-out infinite;
-    }
-
-    /* Right Match Card */
-    .match-card {
-      border-color: #BFDBFE;
-      background: linear-gradient(180deg, #FFFFFF 0%, #F9FBFF 100%);
-    }
-
-    .match-top {
+    .ic-top-actions {
       display: flex;
-      gap: 16px;
       align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
-    .match-img {
-      width: 136px;
-      height: 106px;
-      border-radius: 10px;
+    .ic-pill-btn {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ic-navy);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid var(--ic-navy-border);
+      padding: 5px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .ic-pill-btn:hover {
+      background: var(--ic-navy-soft);
+      border-color: var(--ic-navy);
+    }
+
+    .ic-stage {
+      position: relative;
+      width: 100%;
+      height: 235px;
+      border-radius: 16px;
       overflow: hidden;
-      background: #F1F5F9;
-      border: 1px solid var(--line);
-      flex-shrink: 0;
+      border: 1px solid var(--ic-navy-border);
+      background: radial-gradient(circle at center, rgba(24, 69, 134, 0.07), rgba(244, 248, 254, 0.95));
+      box-shadow: 0 10px 26px rgba(24, 69, 134, 0.08);
     }
 
-    .match-img img {
+    .ic-stage img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
+      transition: transform 0.35s ease;
     }
 
-    .match-details {
+    .ic-hero-card:hover .ic-stage img {
+      transform: scale(1.02);
+    }
+
+    .ic-stage-overlay {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      right: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.92);
+      padding: 8px 14px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ic-navy);
+    }
+
+    .ic-title-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .ic-model-name {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .ic-model-specs {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .ic-price-box {
+      text-align: right;
+    }
+
+    .ic-price-now {
+      display: block;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--ic-navy);
+      line-height: 1.15;
+    }
+
+    .ic-price-was {
+      font-size: 12.5px;
+      color: #8a99ad;
+      text-decoration: line-through;
+    }
+
+    .ic-fit-note {
+      font-size: 13px;
+      color: var(--text);
+      background: var(--ic-glass-subtle);
+      border-left: 4px solid var(--ic-navy);
+      padding: 11px 14px;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .ic-score-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--ic-navy-border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .ic-gauge-wrap {
       display: flex;
       flex-direction: column;
-      gap: 4px;
-      flex: 1;
-    }
-
-    .match-tag {
-      display: inline-block;
-      width: fit-content;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--blue);
-      background: var(--tint);
-      padding: 3px 9px;
-      border-radius: 999px;
-    }
-
-    .match-details h4 {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--navy);
-    }
-
-    .match-details p {
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    .match-price {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      margin-top: 2px;
-    }
-
-    .match-price b {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--navy);
-    }
-
-    .match-price s {
-      font-size: 12px;
-      color: #94A3B8;
-    }
-
-    /* SVG Gauge + Capability Bars */
-    .fit-meter {
-      display: grid;
-      grid-template-columns: 104px 1fr;
       align-items: center;
-      gap: 16px;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 12px 14px;
-    }
-
-    .dial-box {
-      position: relative;
-      width: 104px;
-      height: 58px;
-      display: flex;
-      align-items: flex-end;
       justify-content: center;
+      text-align: center;
     }
 
-    .dial-box svg {
-      width: 104px;
-      height: 58px;
+    .ic-gauge-svg {
+      width: 92px;
+      height: 52px;
       overflow: visible;
     }
 
-    .dial-value {
-      position: absolute;
-      bottom: 2px;
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--navy);
+    .ic-gauge-pct {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text);
+      margin-top: -14px;
     }
 
-    .dial-arc {
-      transition: stroke-dashoffset 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    .bars-col {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .bar-row {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-
-    .bar-head {
-      display: flex;
-      justify-content: space-between;
+    .ic-gauge-caption {
       font-size: 11px;
-      font-weight: 600;
       color: var(--muted);
+      font-weight: 600;
     }
 
-    .bar-head span:last-child {
-      color: var(--blue);
-    }
-
-    .bar-rail {
-      height: 5px;
-      background: #E2E8F0;
-      border-radius: 999px;
-      overflow: hidden;
-    }
-
-    .bar-fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--blue), var(--accent));
-      border-radius: 999px;
-      transition: width 0.4s ease;
-    }
-
-    .match-actions {
+    .ic-metrics-col {
       display: flex;
+      flex-direction: column;
       gap: 10px;
     }
 
-    .match-actions .btn {
+    .ic-metric-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .ic-metric-label {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .ic-metric-val {
+      font-weight: 700;
+      color: var(--ic-navy);
+    }
+
+    .ic-bar-track {
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(24, 69, 134, 0.12);
+      overflow: hidden;
+    }
+
+    .ic-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: var(--ic-navy);
+      transition: width 0.28s ease;
+    }
+
+    .ic-cta-row {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 980px) {
+      .ic-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .ideal-cleaner-wrap {
+        padding: 16px;
+        border-radius: 18px;
+      }
+
+      .ic-glass-card,
+      .ic-hero-card {
+        padding: 18px;
+      }
+
+      .ic-stage {
+        height: 195px;
+      }
+
+      .ic-price-box {
+        text-align: left;
+      }
+
+      .ic-mess-grid,
+      .ic-score-card,
+      .ic-cta-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ECOVACS Care & Ownership Journey — Architectural Stepper Layout */
+    .care-hub {
+      --c-navy: #184586;
+      --c-navy-dark: #113263;
+      --c-soft: #eef4fc;
+      --c-border: rgba(24, 69, 134, 0.16);
+      background: var(--white);
+      border: 1px solid var(--c-border);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 18px 44px rgba(24, 69, 134, 0.07);
+    }
+
+    .care-stepper-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: #f6f9fe;
+      border-bottom: 1px solid var(--c-border);
+    }
+
+    .care-tab-btn {
+      position: relative;
+      border: none;
+      border-right: 1px solid var(--c-border);
+      background: transparent;
+      padding: 20px 18px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transition: background 0.2s ease;
+    }
+
+    .care-tab-btn:last-child {
+      border-right: none;
+    }
+
+    .care-tab-btn:hover {
+      background: rgba(24, 69, 134, 0.04);
+    }
+
+    .care-tab-btn.active {
+      background: var(--white);
+    }
+
+    .care-tab-btn.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 3px;
+      background: var(--c-navy);
+    }
+
+    .care-tab-step {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--c-navy);
+    }
+
+    .care-tab-name {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .care-tab-mini {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .care-stage-body {
+      padding: 32px 34px;
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 28px;
+      align-items: center;
+      background: radial-gradient(circle at 92% 18%, rgba(24, 69, 134, 0.05), transparent 48%), var(--white);
+    }
+
+    .care-stage-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--c-navy);
+      background: var(--c-soft);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .care-stage-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .care-stage-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.65;
+      max-width: 640px;
+      margin-bottom: 18px;
+    }
+
+    .care-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .care-chip {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--c-navy);
+      background: #f8fbff;
+      border: 1px solid var(--c-border);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .care-metric-tile {
+      background: linear-gradient(155deg, #184586 0%, #102e5c 100%);
+      color: var(--white);
+      border-radius: 18px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 12px 28px rgba(24, 69, 134, 0.22);
+    }
+
+    .care-metric-tile span.m-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .care-metric-tile b {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .care-metric-tile p {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.45;
+    }
+
+    .care-service-footer {
+      background: #f8faff;
+      border-top: 1px solid var(--c-border);
+      padding: 20px 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .care-city-inline {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
       flex: 1;
+      min-width: 260px;
     }
 
-    @media (max-width: 900px) {
-      .matcher-shell {
+    .care-city-inline label {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .care-city-select {
+      height: 38px;
+      padding: 0 12px;
+      border-radius: 9px;
+      border: 1.5px solid var(--c-border);
+      background: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--c-navy);
+      cursor: pointer;
+    }
+
+    .care-city-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--text);
+    }
+
+    .care-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #16A34A;
+      flex-shrink: 0;
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+    }
+
+    .care-tollfree-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--white);
+      border: 1.5px solid var(--c-navy);
+      border-radius: 999px;
+      padding: 8px 18px 8px 14px;
+      transition: all 0.2s ease;
+    }
+
+    .care-tollfree-cta:hover {
+      background: var(--c-navy);
+      color: var(--white);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(24, 69, 134, 0.18);
+    }
+
+    .care-tollfree-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--c-soft);
+      color: var(--c-navy);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .care-tollfree-text small {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--muted);
+      line-height: 1.2;
+    }
+
+    .care-tollfree-cta:hover .care-tollfree-text small {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .care-tollfree-text strong {
+      display: block;
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--c-navy);
+      letter-spacing: 0.02em;
+    }
+
+    .care-tollfree-cta:hover .care-tollfree-text strong {
+      color: var(--white);
+    }
+
+    @media (max-width: 960px) {
+      .care-stepper-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .care-tab-btn:nth-child(2) {
+        border-right: none;
+      }
+
+      .care-tab-btn:nth-child(1),
+      .care-tab-btn:nth-child(2) {
+        border-bottom: 1px solid var(--c-border);
+      }
+
+      .care-stage-body {
         grid-template-columns: 1fr;
+        padding: 24px;
+      }
+
+      .care-service-footer {
+        padding: 18px 24px;
       }
     }
 
-    @media (max-width: 520px) {
-      .match-top {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .match-img {
-        width: 100%;
-        height: 150px;
-      }
-
-      .fit-meter {
+    @media (max-width: 560px) {
+      .care-stepper-bar {
         grid-template-columns: 1fr;
-        justify-items: center;
       }
 
-      .bars-col {
+      .care-tab-btn {
+        border-right: none;
+        border-bottom: 1px solid var(--c-border);
+        padding: 14px 16px;
+      }
+
+      .care-stage-body {
+        padding: 20px 16px;
+      }
+
+      .care-service-footer {
+        padding: 16px;
+      }
+
+      .care-tollfree-cta {
         width: 100%;
-      }
-
-      .concern-menu {
-        max-height: 220px;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-        z-index: 50;
+        justify-content: center;
       }
     }
   </style>
@@ -2070,6 +2553,7 @@
         <a href="#why">Technology</a>
         <a href="#footprints">Global Trust</a>
         <a href="#experience">Experience Stores</a>
+        <a href="#care">Service &amp; Warranty</a>
         <a href="#testimonials">Reviews</a>
       </nav>
       <div class="head-r">
@@ -2399,8 +2883,201 @@
       </div>
     </section>
 
+    <!-- Find Your Ideal Cleaner -->
+    <section class="screen" id="idealCleaner">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Find Your Ideal Cleaner</h2>
+          <span class="sub">Dusty ho ya monsoonal, har mausam ke liye sahi match</span>
+          <span class="sec-meta">Complete the steps on the left—your matched ECOVACS model and image will appear
+            here</span>
+        </div>
+
+        <div class="ideal-cleaner-wrap">
+          <div class="ic-grid">
+            <!-- LEFT CARD: Separated Flooring, Mess & Budget Blocks -->
+            <div class="ic-glass-card">
+              <div class="ic-card-header">
+                <span class="ic-eyebrow">Your Home Profile</span>
+                <h3 class="ic-panel-title">Customize for your floor &amp; budget</h3>
+                <p class="ic-panel-desc">Choose your options below to reveal your best match.</p>
+              </div>
+
+              <!-- 1. Flooring Type (3 Main + Other + Manual Input) -->
+              <div class="ic-step-block">
+                <div class="ic-step-head">
+                  <span class="ic-step-label">1. Flooring Type</span>
+                  <span class="ic-step-hint" id="icFloorHint">Select a floor type</span>
+                </div>
+                <div class="ic-floor-pills" role="group" aria-label="Flooring Type">
+                  <button type="button" class="ic-floor-pill" data-floor="marble">Marble &amp; Vitrified Tiles</button>
+                  <button type="button" class="ic-floor-pill" data-floor="wood">Wooden / Laminate</button>
+                  <button type="button" class="ic-floor-pill" data-floor="rugs">Tiles + Area Rugs</button>
+                  <button type="button" class="ic-floor-pill" data-floor="other">Other</button>
+                </div>
+
+                <div class="ic-custom-floor-box" id="icCustomFloorBox">
+                  <label for="icCustomFloorInput">Type your flooring material manually</label>
+                  <input type="text" id="icCustomFloorInput" class="ic-custom-floor-input"
+                    placeholder="e.g., Kota stone, Italian marble, terrazzo, balcony tiles..." maxlength="60" />
+                </div>
+              </div>
+
+              <!-- 2. Mess & Weather Scenario -->
+              <div class="ic-step-block">
+                <div class="ic-step-head">
+                  <span class="ic-step-label">2. Daily Mess &amp; Weather Scenario</span>
+                  <span class="ic-step-hint">Primary concern</span>
+                </div>
+                <div class="ic-mess-grid" role="group" aria-label="Daily Mess and Weather Scenario">
+                  <button type="button" class="ic-mess-btn" data-mess="dust">
+                    <span class="ic-mess-title">Balcony &amp; Road Dhool</span>
+                    <span class="ic-mess-sub">Fine dust &amp; tile-joint grit</span>
+                  </button>
+                  <button type="button" class="ic-mess-btn" data-mess="monsoon">
+                    <span class="ic-mess-title">Monsoon Mud &amp; Humidity</span>
+                    <span class="ic-mess-sub">Wet footprints &amp; zero mop odor</span>
+                  </button>
+                  <button type="button" class="ic-mess-btn" data-mess="stains">
+                    <span class="ic-mess-title">Kitchen Oil, Chai &amp; Haldi</span>
+                    <span class="ic-mess-sub">Dried Indian spills &amp; grease</span>
+                  </button>
+                  <button type="button" class="ic-mess-btn" data-mess="hair">
+                    <span class="ic-mess-title">Long Hair &amp; Pet Shedding</span>
+                    <span class="ic-mess-sub">ZeroTangle brush &amp; auto-empty</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- 3. Price Range Slider -->
+              <div class="ic-step-block">
+                <div class="ic-step-head">
+                  <span class="ic-step-label">3. Budget Range (Up to)</span>
+                  <span class="ic-budget-pill" id="icBudgetDisplay">₹1,50,000</span>
+                </div>
+                <input type="range" id="icBudgetSlider" class="ic-budget-slider" min="25000" max="150000" step="5000"
+                  value="150000" aria-label="Budget range in INR" />
+                <div class="ic-budget-ticks">
+                  <span>₹25K Value</span>
+                  <span>₹75K Mid-Range</span>
+                  <span>₹1.5L Flagship</span>
+                </div>
+              </div>
+
+              <div class="ic-care-tip">
+                <strong>Indian Home Care Tip</strong>
+                <span id="icCareTipText">Pick your flooring type above to get surface-specific mopping and maintenance
+                  tips for Indian homes.</span>
+              </div>
+            </div>
+
+            <!-- RIGHT CARD: Prompt State First -> Enlarged Product Spotlight After Selection -->
+            <div class="ic-hero-card">
+              <div class="ic-empty-box" id="icEmptyBox">
+                <div class="ic-empty-icon">✦</div>
+                <h3 class="ic-empty-title">Complete the choice in easy steps</h3>
+                <p class="ic-empty-copy">
+                  Select your <strong>flooring type</strong> and <strong>daily mess scenario</strong> (and adjust your
+                  <strong>budget slider</strong>) on the left—your matched cleaner image and details will appear right
+                  here.
+                </p>
+                <div class="ic-checklist">
+                  <span class="ic-check-chip" id="icChipFloor">1. Flooring</span>
+                  <span class="ic-check-chip" id="icChipMess">2. Mess / Weather</span>
+                  <span class="ic-check-chip" id="icChipBudget">3. Budget</span>
+                </div>
+              </div>
+
+              <div class="ic-matched-box" id="icMatchedBox" hidden>
+                <div class="ic-hero-top">
+                  <span class="ic-best-badge" id="icMatchBadge">Recommended For You · X Series</span>
+                  <div class="ic-top-actions">
+                    <button type="button" class="ic-pill-btn" id="icAltBtn" hidden>Compare Runner-Up</button>
+                    <button type="button" class="ic-pill-btn" id="icResetBtn">Reset</button>
+                  </div>
+                </div>
+
+                <div class="ic-stage">
+                  <img id="icModelImage"
+                    src="https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=1000&q=85"
+                    alt="Recommended ECOVACS Model" />
+                  <div class="ic-stage-overlay">
+                    <span id="icStageTag">Matched for your home</span>
+                    <span id="icSeriesTag">Flagship</span>
+                  </div>
+                </div>
+
+                <div class="ic-title-price">
+                  <div>
+                    <h3 class="ic-model-name" id="icModelName">DEEBOT X12 OmniCyclone</h3>
+                    <p class="ic-model-specs" id="icModelSpecs">30,000Pa · PowerBoost · Dual Hot Mop</p>
+                  </div>
+                  <div class="ic-price-box">
+                    <span class="ic-price-now" id="icModelPrice">₹1,49,999</span>
+                    <span class="ic-price-was" id="icModelMrp">₹2,99,999</span>
+                  </div>
+                </div>
+
+                <p class="ic-fit-note" id="icFitSummary"></p>
+
+                <div class="ic-score-card">
+                  <div class="ic-gauge-wrap">
+                    <svg class="ic-gauge-svg" viewBox="0 0 100 55" aria-hidden="true">
+                      <path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="rgba(24, 69, 134, 0.14)"
+                        stroke-width="9" stroke-linecap="round" />
+                      <path id="icGaugeArc" d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="#184586"
+                        stroke-width="9" stroke-linecap="round" stroke-dasharray="126" stroke-dashoffset="4" />
+                    </svg>
+                    <div class="ic-gauge-pct" id="icMatchPct">98%</div>
+                    <div class="ic-gauge-caption">Home Fit</div>
+                  </div>
+
+                  <div class="ic-metrics-col">
+                    <div>
+                      <div class="ic-metric-head">
+                        <span class="ic-metric-label" id="icMetric1Label">Dust &amp; Grit Lift</span>
+                        <span class="ic-metric-val" id="icMetric1Val">99%</span>
+                      </div>
+                      <div class="ic-bar-track">
+                        <div class="ic-bar-fill" id="icMetric1Bar" style="width: 99%"></div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="ic-metric-head">
+                        <span class="ic-metric-label" id="icMetric2Label">Floor Fit</span>
+                        <span class="ic-metric-val" id="icMetric2Val">99%</span>
+                      </div>
+                      <div class="ic-bar-track">
+                        <div class="ic-bar-fill" id="icMetric2Bar" style="width: 99%"></div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="ic-metric-head">
+                        <span class="ic-metric-label" id="icMetric3Label">Hands-Free Maintenance</span>
+                        <span class="ic-metric-val" id="icMetric3Val">98%</span>
+                      </div>
+                      <div class="ic-bar-track">
+                        <div class="ic-bar-fill" id="icMetric3Bar" style="width: 98%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ic-cta-row">
+                  <a href="#experience" class="btn ghost" id="icBookDemoBtn">Book Free Demo</a>
+                  <a href="#lineup" class="btn" id="icViewModelBtn">Explore This Model</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Experience Before You Buy -->
-    <section class="screen" id="experience">
+    <section class="screen alt" id="experience">
       <div class="wrap">
         <div class="sec-head">
           <h2>Experience Before You Buy</h2>
@@ -2437,15 +3114,14 @@
               </div>
               <div class="field-group">
                 <label for="custPhone">Contact number</label>
-                <input id="custPhone" type="tel" maxlength="10" inputmode="numeric" pattern="[0-9]{10}" placeholder="10-digit mobile number" required autocomplete="tel">
-                <span class="field-error-msg" id="phoneError" role="alert">This format does not support. Use numbers.</span>
+                <input id="custPhone" type="tel" maxlength="10" inputmode="numeric" pattern="[0-9]{10}"
+                  placeholder="10-digit mobile number" required autocomplete="tel">
+                <span class="field-error-msg" id="phoneError" role="alert">This format does not support. Use
+                  numbers.</span>
               </div>
               <div class="field-group">
                 <label for="city">City hub</label>
                 <select id="city" required></select>
-              </div>
-              <div class="field-group">
-
               </div>
               <button class="confirm-btn" type="submit" id="demoSubmit">Confirm Demo Booking</button>
               <span class="form-status" id="demoStatus"></span>
@@ -2467,42 +3143,6 @@
       </div>
     </section>
 
-    <!-- Find Your Ideal Cleaner -->
-    <section class="screen alt" id="idealCleaner">
-      <div class="wrap">
-        <div class="sec-head">
-          <h2>Find Your Ideal Cleaner</h2>
-          <span class="sub">Dusty ho ya monsoonal, har mausam ke liye sahi match</span>
-          <span class="sec-meta">Hover or select your weather &amp; home concern below</span>
-        </div>
-
-        <div class="matcher-shell">
-          <div class="panel-card">
-            <div class="panel-header">
-              <span class="tag">Weather &amp; Home Concern</span>
-              <h3>What does your home face most?</h3>
-              <p>Select your weather or daily mess concern to see the suitable ECOVACS model.</p>
-            </div>
-
-            <div class="concern-dropdown" id="concernDropdown">
-              <button type="button" class="concern-trigger" id="concernTrigger" aria-expanded="false">
-                <span class="trigger-labels">
-                  <strong id="concernTitle">Dusty &amp; High-Pollution Air</strong>
-                  <span id="concernSub">Dhool, balcony grit &amp; fine marble dust</span>
-                </span>
-                <span class="trigger-icon">&#9660;</span>
-              </button>
-              <div class="concern-menu" id="concernMenu" role="listbox"></div>
-            </div>
-
-            <div class="scenario-box" id="scenarioBox"></div>
-          </div>
-
-          <div class="panel-card match-card" id="matchCard"></div>
-        </div>
-      </div>
-    </section>
-
     <!-- Curated Lineup -->
     <section class="screen alt" id="lineup">
       <div class="wrap">
@@ -2511,6 +3151,97 @@
           <span class="sub">Har ghar ke liye ek saathi</span>
         </div>
         <div class="grid c4" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- ECOVACS Care & Ownership Journey -->
+    <section class="screen" id="care">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>ECOVACS Care &amp; Ownership Assurance</h2>
+          <span class="sub">Kharidne ke baad bhi, har kadam par saath</span>
+          <span class="sec-meta">Pan-India doorstep installation, 24-hour technician support, and genuine spares by
+            Frootle India</span>
+        </div>
+
+        <div class="care-hub">
+          <!-- 1. Top Segmented Stepper Track -->
+          <div class="care-stepper-bar" id="careStepperBar" role="tablist" aria-label="Ownership & Service Stages">
+            <button type="button" class="care-tab-btn active" data-step="0" role="tab" aria-selected="true">
+              <span class="care-tab-step">Stage 01 · Day 1</span>
+              <span class="care-tab-name">Free Home Installation</span>
+              <span class="care-tab-mini">LiDAR mapping &amp; app setup</span>
+            </button>
+
+            <button type="button" class="care-tab-btn" data-step="1" role="tab" aria-selected="false">
+              <span class="care-tab-step">Stage 02 · 24 Hrs</span>
+              <span class="care-tab-name">Doorstep Engineer Care</span>
+              <span class="care-tab-mini">47+ service hubs pan-India</span>
+            </button>
+
+            <button type="button" class="care-tab-btn" data-step="2" role="tab" aria-selected="false">
+              <span class="care-tab-step">Stage 03 · 1+2 Yrs</span>
+              <span class="care-tab-name">Extended Warranty Shield</span>
+              <span class="care-tab-mini">₹0 visit &amp; transit fees</span>
+            </button>
+
+            <button type="button" class="care-tab-btn" data-step="3" role="tab" aria-selected="false">
+              <span class="care-tab-step">Stage 04 · Lifetime</span>
+              <span class="care-tab-name">Genuine OEM Spares</span>
+              <span class="care-tab-mini">Filters, mops &amp; dust bags</span>
+            </button>
+          </div>
+
+          <!-- 2. Center Stage Spotlight Panel -->
+          <div class="care-stage-body">
+            <div>
+              <span class="care-stage-kicker" id="careKicker">Stage 01 · Complimentary Onboarding</span>
+              <h3 class="care-stage-title" id="careStageTitle">Guided Doorstep Setup &amp; Multi-Floor Mapping</h3>
+              <p class="care-stage-desc" id="careStageDesc">
+                Our specialist helps unbox your DEEBOT, connect the ECOVACS HOME app, run your first 10-minute LiDAR
+                floor scan, and configure carpet no-mop boundaries for your home.
+              </p>
+              <div class="care-chip-row" id="careChipRow">
+                <span class="care-chip">Multi-Floor Map Setup</span>
+                <span class="care-chip">YIKO Voice Calibration</span>
+                <span class="care-chip">Hard-Water Care Guidance</span>
+              </div>
+            </div>
+
+            <div class="care-metric-tile">
+              <span class="m-eyebrow" id="careMetricEyebrow">Installation Charge</span>
+              <b id="careMetricValue">₹0 Free</b>
+              <p id="careMetricNote">Included with every DEEBOT, WINBOT &amp; GOAT purchase across India.</p>
+            </div>
+          </div>
+
+          <!-- 3. Bottom Unified Service Bar (City Checker + Toll-Free Call Only) -->
+          <div class="care-service-footer">
+            <div class="care-city-inline">
+              <label for="careCitySelect">Check City Coverage:</label>
+              <select id="careCitySelect" class="care-city-select"></select>
+              <span class="care-city-live">
+                <span class="care-dot" aria-hidden="true"></span>
+                <span id="careCityStatus"><strong>Mumbai:</strong> 24-hour doorstep technician visit available under
+                  warranty.</span>
+              </span>
+            </div>
+
+            <a href="tel:18002588085" class="care-tollfree-cta" aria-label="Call Toll-Free 1800 258 8085">
+              <span class="care-tollfree-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+              <span class="care-tollfree-text">
+                <small>Service Helpline · Mon–Sat 10 AM – 6 PM</small>
+                <strong>1800 258 8085</strong>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2574,7 +3305,7 @@
           <h4>Important Links</h4>
           <ul>
             <li><a href="#experience">Visit a Store</a></li>
-            <li><a href="#">Extended Warranty</a></li>
+            <li><a href="#care">Extended Warranty</a></li>
             <li><a href="#">Customer Policy</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Cookie Policy</a></li>
@@ -2641,17 +3372,14 @@
       let activeIndex = null;
       let hoverTimer = null;
 
-      // FLIP animation helper so shifting Bento cards glide smoothly without layout snapping
       function applyLayoutWithFlip(newActiveIndex) {
         if (activeIndex === newActiveIndex) return;
 
-        // 1. Record FIRST positions
         const firstRects = new Map();
         cards.forEach((card) => {
           firstRects.set(card, card.getBoundingClientRect());
         });
 
-        // 2. Clear previous classes
         cards.forEach((card) => {
           card.classList.remove('is-expanded', 'is-companion');
         });
@@ -2659,10 +3387,8 @@
         activeIndex = newActiveIndex;
 
         if (activeIndex !== null && window.innerWidth > 1024) {
-          // Expand hovered card to 2x2 (4 cells)
           cards[activeIndex].classList.add('is-expanded');
 
-          // Pick 2 non-active cards to span 2 columns each (4 + 2 + 2 + 7 = 15 cells = 3 exact full rows of 5, zero gaps)
           const companion1 = (activeIndex + 1) % cards.length;
           const companion2 = (activeIndex + 6) % cards.length;
           cards[companion1].classList.add('is-companion');
@@ -2673,7 +3399,6 @@
           cards[activeIndex].classList.add('is-expanded');
         }
 
-        // 3. Record LAST positions and INVERT + PLAY
         cards.forEach((card) => {
           const first = firstRects.get(card);
           const last = card.getBoundingClientRect();
@@ -2695,7 +3420,6 @@
         });
       }
 
-      // Hover interaction on desktop
       cards.forEach((card, idx) => {
         card.addEventListener('mouseenter', () => {
           if (window.innerWidth <= 1024) return;
@@ -2705,7 +3429,6 @@
           }, 110);
         });
 
-        // Tap / Click support for touchscreens & mobile
         card.addEventListener('click', () => {
           if (window.innerWidth <= 1024) {
             applyLayoutWithFlip(activeIndex === idx ? null : idx);
@@ -2713,7 +3436,6 @@
         });
       });
 
-      // Reset back to clean 5x2 resting grid when cursor leaves the entire section
       grid.addEventListener('mouseleave', () => {
         if (window.innerWidth <= 1024) return;
         clearTimeout(hoverTimer);
@@ -2766,6 +3488,100 @@
     <button class="btn" ${p[5] ? "disabled" : ""}>${p[5] ? "Sold Out" : "Add to Cart"}</button>
   </div>
  </article>`).join("");
+
+    // ECOVACS Care Stepper & City Coverage Interactions
+    (function () {
+      const stages = [
+        {
+          kicker: "Stage 01 · Complimentary Onboarding",
+          title: "Guided Doorstep Setup & Multi-Floor Mapping",
+          desc: "Our specialist helps unbox your DEEBOT, connect the ECOVACS HOME app, run your first 10-minute LiDAR floor scan, and configure carpet no-mop boundaries for your home.",
+          chips: ["Multi-Floor Map Setup", "YIKO Voice Calibration", "Hard-Water Care Guidance"],
+          metricEyebrow: "Installation Charge",
+          metricValue: "₹0 Free",
+          metricNote: "Included with every DEEBOT, WINBOT & GOAT purchase across India."
+        },
+        {
+          kicker: "Stage 02 · Pan-India Service Network",
+          title: "24-Hour Doorstep Technician Dispatch",
+          desc: "Need troubleshooting or physical inspection? Our pan-India service network dispatches trained engineers to your doorstep within 24 hours across metro and Tier-1 hubs.",
+          chips: ["47+ Regional Service Hubs", "Live Video Diagnostics", "Direct Toll-Free Support"],
+          metricEyebrow: "Response SLA",
+          metricValue: "24 Hours",
+          metricNote: "Fast doorstep technician turnaround across 47+ Frootle India service offices."
+        },
+        {
+          kicker: "Stage 03 · Comprehensive Protection",
+          title: "Extended Warranty & Zero-Fee Care Shield",
+          desc: "Activate extended warranty within 30 days of purchase to cover core drive motors, LiDAR/dToF navigation sensors, and main boards with zero visit or transit charges.",
+          chips: ["₹0 Home Visit Fee", "₹0 Insured Pickup & Return", "30-Day Activation Window"],
+          metricEyebrow: "Fee Savings",
+          metricValue: "₹2,280 Saved",
+          metricNote: "Waives ₹990 technician visit + ₹1,290 insured two-way transit fees."
+        },
+        {
+          kicker: "Stage 04 · Peak Performance Maintenance",
+          title: "Genuine OEM Spares & Consumables Delivery",
+          desc: "Keep suction and mopping at factory-fresh efficiency with original antibacterial dust bags, washable HEPA filters, side brushes, OZMO roller pads, and floor solution.",
+          chips: ["Antibacterial Dust Bags", "Washable HEPA Filters", "Low-Foam Cleaning Solution"],
+          metricEyebrow: "Authenticity",
+          metricValue: "100% OEM",
+          metricNote: "Direct doorstep dispatch of certified ECOVACS filters, brushes & mops."
+        }
+      ];
+
+      const metroDoorstepCities = new Set([
+        "Mumbai", "Thane", "Pune", "Delhi", "Noida", "Gurgaon",
+        "Bangalore", "Hyderabad", "Chennai", "Ahmedabad", "Surat",
+        "Vadodara", "Jaipur", "Lucknow", "Indore", "Kochi",
+        "Trivandrum", "Coimbatore", "Nagpur", "Nashik", "Mohali",
+        "Vijayawada", "Visakhapatnam"
+      ]);
+
+      const careCitySelect = $("careCitySelect");
+      if (careCitySelect) {
+        const serviceCities = cities.filter(c => c !== "Online / Virtual Demo");
+        careCitySelect.innerHTML = serviceCities
+          .map(c => `<option value="${c}">${c}</option>`)
+          .join("");
+
+        careCitySelect.addEventListener("change", e => {
+          const city = e.target.value;
+          const isMetro = metroDoorstepCities.has(city);
+          $("careCityStatus").innerHTML = isMetro
+            ? `<strong>${city}:</strong> 24-hour doorstep technician visit available under warranty.`
+            : `<strong>${city}:</strong> Free insured doorstep pickup & return + live video specialist support.`;
+        });
+      }
+
+      const tabBtns = document.querySelectorAll("#careStepperBar .care-tab-btn");
+      tabBtns.forEach(btn => {
+        const idx = Number(btn.dataset.step);
+        const selectStage = () => {
+          tabBtns.forEach(b => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+
+          const s = stages[idx];
+          if (!s) return;
+          $("careKicker").textContent = s.kicker;
+          $("careStageTitle").textContent = s.title;
+          $("careStageDesc").textContent = s.desc;
+          $("careChipRow").innerHTML = s.chips.map(c => `<span class="care-chip">${c}</span>`).join("");
+          $("careMetricEyebrow").textContent = s.metricEyebrow;
+          $("careMetricValue").textContent = s.metricValue;
+          $("careMetricNote").textContent = s.metricNote;
+        };
+
+        btn.addEventListener("click", selectStage);
+        btn.addEventListener("mouseenter", () => {
+          if (window.innerWidth > 960) selectStage();
+        });
+      });
+    })();
 
     // Testimonials Carousel
     const testimonials = [
@@ -2851,266 +3667,357 @@
       $("demoStatus").textContent = `Session reserved for ${$("city").value}. Our team will call shortly.`;
     };
 
-    // Find Your Ideal Cleaner / Weather Matcher Logic
+    // Find Your Ideal Cleaner — Flooring + Mess/Weather + Budget Spotlight Logic
     (function () {
       const models = [
         {
-          name: "DEEBOT X12 OmniCyclone",
-          series: "X Series",
-          spec: "30,000Pa · PowerBoost · Dual Hot Mop",
-          mrp: 299999,
-          price: 149999,
-          img: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=700&q=80",
-          score: 98,
-          dust: 99,
-          stain: 92,
-          ease: 96
-        },
-        {
-          name: "DEEBOT T90 Pro Omni",
-          series: "T Series",
-          spec: "25,000Pa · OZMO Roller 2.0 · 75°C Wash",
-          mrp: 225999,
-          price: 124999,
-          img: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=700&q=80",
-          score: 97,
-          dust: 92,
-          stain: 98,
-          ease: 97
-        },
-        {
-          name: "DEEBOT T50S Pro Omni",
-          series: "T Series",
-          spec: "21,000Pa · Ultra-Slim 81mm · AIVI 3D",
-          mrp: 159999,
-          price: 74999,
-          img: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=700&q=80",
-          score: 94,
-          dust: 88,
-          stain: 94,
-          ease: 92
-        },
-        {
-          name: "DEEBOT N30 White",
+          id: "n30-plus",
           series: "The N Series",
-          spec: "10,000Pa · ZeroTangle 2.0 · Compact Dock",
-          mrp: 59999,
-          price: 23999,
-          img: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=700&q=80",
-          score: 90,
-          dust: 84,
-          stain: 82,
+          tierTag: "Value Essential",
+          name: "DEEBOT N30 Plus",
+          price: 32999,
+          mrp: 89999,
+          specs: "10,000Pa · PureCyclone Auto-Empty · ZeroTangle",
+          scores: { dust: 86, monsoon: 78, stains: 76, hair: 88 },
+          floorFit: { marble: 86, wood: 84, rugs: 80, other: 84 },
           ease: 85
         },
         {
-          name: "WINBOT Mini 2",
-          series: "Window",
-          spec: "Dual Cross-Spray · Edge-Clean AI",
-          mrp: 52999,
-          price: 24999,
-          img: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=700&q=80",
-          score: 95,
-          dust: 90,
-          stain: 95,
-          ease: 91
+          id: "t30e-omni",
+          series: "T Series",
+          tierTag: "All-in-One Omni",
+          name: "DEEBOT T30e Omni",
+          price: 54999,
+          mrp: 99999,
+          specs: "11,000Pa · 70°C Hot-Water Mop Wash · TruEdge",
+          scores: { dust: 90, monsoon: 88, stains: 86, hair: 90 },
+          floorFit: { marble: 91, wood: 88, rugs: 87, other: 89 },
+          ease: 90
+        },
+        {
+          id: "t50s-pro-omni",
+          series: "T Series",
+          tierTag: "Pro Performance",
+          name: "DEEBOT T50S Pro Omni",
+          price: 74999,
+          mrp: 159999,
+          specs: "21,000Pa · Ultra-Slim 81mm · AIVI 3D",
+          scores: { dust: 95, monsoon: 92, stains: 91, hair: 95 },
+          floorFit: { marble: 95, wood: 92, rugs: 93, other: 94 },
+          ease: 94
+        },
+        {
+          id: "x12-omnicyclone",
+          series: "X Series",
+          tierTag: "Flagship Powerhouse",
+          name: "DEEBOT X12 OmniCyclone",
+          price: 149999,
+          mrp: 299999,
+          specs: "30,000Pa · PowerBoost · Dual Hot Mop",
+          scores: { dust: 99, monsoon: 96, stains: 97, hair: 98 },
+          floorFit: { marble: 99, wood: 95, rugs: 97, other: 97 },
+          ease: 98
         }
       ];
 
-      const concerns = [
-        {
-          label: "Dusty & High-Pollution Air",
-          sub: "Dhool, balcony grit & fine marble dust",
-          modelIdx: 0,
-          sceneTitle: "Fine Dust & Grit Extraction",
-          desc: "30,000Pa suction pulls fine Indian dust and balcony grit from marble joints and rugs.",
-          svg: `
-            <svg class="scenario-svg" viewBox="0 0 92 74" fill="none">
-              <rect x="8" y="58" width="76" height="6" rx="3" fill="#DBEAFE" />
-              <circle class="svg-speck" cx="24" cy="24" r="3.5" fill="#2563EB" />
-              <circle class="svg-speck" cx="46" cy="16" r="2.8" fill="#163E7A" style="animation-delay:.4s" />
-              <circle class="svg-speck" cx="66" cy="26" r="3.2" fill="#2563EB" style="animation-delay:.9s" />
-              <path d="M22 49 Q 46 28 70 49" stroke="#163E7A" stroke-width="2.2" stroke-linecap="round" />
-              <path d="M30 53 Q 46 37 62 53" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" />
-            </svg>
-          `
+      const scenarioImages = {
+        dust: {
+          url: "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=1000&q=85",
+          alt: "Robot vacuum lifting fine balcony dust and grit from floor"
         },
-        {
-          label: "Monsoonal & Humid Weather",
-          sub: "Baarish ke muddy footprints, nami & damp odor",
-          modelIdx: 1,
-          sceneTitle: "75°C Hot Wash & Odor Care",
-          desc: "75°C hot-water mop washing and hot-air drying sanitize monsoon mud and keep pads dry.",
-          svg: `
-            <svg class="scenario-svg" viewBox="0 0 92 74" fill="none">
-              <path d="M24 28a15 15 0 0 1 29-4 12 12 0 0 1 12 12c0 5-4 8-9 8H25a11 11 0 0 1-1-16z" fill="#DBEAFE" stroke="#163E7A" stroke-width="2" />
-              <path class="svg-rain" d="M30 48v8" stroke="#2563EB" stroke-width="2.2" stroke-linecap="round" />
-              <path class="svg-rain" d="M46 48v9" stroke="#163E7A" stroke-width="2.2" stroke-linecap="round" style="animation-delay:.35s" />
-              <path class="svg-rain" d="M62 48v8" stroke="#2563EB" stroke-width="2.2" stroke-linecap="round" style="animation-delay:.7s" />
-              <ellipse class="svg-ripple" cx="46" cy="64" rx="24" ry="4" stroke="#2563EB" stroke-width="1.6" />
-            </svg>
-          `
+        monsoon: {
+          url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=85",
+          alt: "Mopping and hot-air drying setup for humid monsoon floor care"
         },
-        {
-          label: "Kitchen Spills & Sticky Stains",
-          sub: "Dried chai, haldi, oil & under-sofa dust",
-          modelIdx: 2,
-          sceneTitle: "Slim 81mm Stain Reach",
-          desc: "21,000Pa suction and an 81mm slim body glide under low sofas to lift daily spills.",
-          svg: `
-            <svg class="scenario-svg" viewBox="0 0 92 74" fill="none">
-              <circle cx="46" cy="38" r="17" fill="#EFF4FB" stroke="#163E7A" stroke-width="2" />
-              <circle class="svg-ripple" cx="46" cy="38" r="23" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="4 4" />
-              <path d="M38 38h16M46 30v16" stroke="#163E7A" stroke-width="2.2" stroke-linecap="round" />
-              <rect x="14" y="60" width="64" height="5" rx="2.5" fill="#DBEAFE" />
-            </svg>
-          `
+        stains: {
+          url: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=85",
+          alt: "Floor mopping and scrubbing kitchen oil, chai, and haldi spills"
         },
-        {
-          label: "Everyday Compact Home Care",
-          sub: "Daily dry + wet safai on a smart budget",
-          modelIdx: 3,
-          sceneTitle: "Compact Daily Cleaning",
-          desc: "10,000Pa suction and ZeroTangle 2.0 deliver reliable daily upkeep with a compact dock.",
-          svg: `
-            <svg class="scenario-svg" viewBox="0 0 92 74" fill="none">
-              <rect x="22" y="15" width="48" height="38" rx="8" fill="#EFF4FB" stroke="#163E7A" stroke-width="2" />
-              <path d="M35 34l7 7 14-15" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-              <rect x="16" y="59" width="60" height="5" rx="2.5" fill="#DBEAFE" />
-            </svg>
-          `
-        },
-        {
-          label: "High-Rise Windows & Balcony Glass",
-          sub: "Rain streaks, smog film & outdoor glass panels",
-          modelIdx: 4,
-          sceneTitle: "Streak-Free Glass Care",
-          desc: "Dual cross-spray and Edge-Clean AI clear monsoon watermarks and city dust on glass.",
-          svg: `
-            <svg class="scenario-svg" viewBox="0 0 92 74" fill="none">
-              <rect x="20" y="13" width="52" height="46" rx="6" fill="#EFF4FB" stroke="#163E7A" stroke-width="2" />
-              <path d="M31 45L55 21" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" />
-              <path d="M42 49L59 32" stroke="#163E7A" stroke-width="2" stroke-linecap="round" />
-              <circle class="svg-speck" cx="28" cy="23" r="3" fill="#2563EB" />
-            </svg>
-          `
+        hair: {
+          url: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85",
+          alt: "Anti-tangle floor cleaning for long hair and pet shedding at home"
         }
-      ];
+      };
 
-      const ARC_LEN = 128.8; // Math.PI * 41
+      const floorFallbackImg = {
+        marble: "dust",
+        wood: "monsoon",
+        rugs: "hair",
+        other: "stains"
+      };
 
-      function renderMatch(idx) {
-        const item = concerns[idx];
-        const m = models[item.modelIdx];
+      const floorMeta = {
+        marble: {
+          label: "Marble & Vitrified Tiles",
+          hint: "Safe for Indian marble & vitrified tiles",
+          tip: "Use filtered or low-TDS water in hard-water areas to keep glossy marble streak-free and prevent mineral buildup."
+        },
+        wood: {
+          label: "Wooden / Laminate",
+          hint: "Controlled moisture for wood & laminate",
+          tip: "Keep mop moisture on low-to-medium settings so wood planks and laminate joints stay dry and protected."
+        },
+        rugs: {
+          label: "Tiles + Area Rugs",
+          hint: "Handles hard tiles alongside rugs & mats",
+          tip: "Enable auto mop-lifting and carpet suction boost so area rugs stay dry while hard floors get full mopping."
+        },
+        other: {
+          label: "Custom Flooring",
+          hint: "Tailored for your specified floor surface",
+          tip: "Test mop water flow on a small corner first and adjust suction based on surface texture and grout depth."
+        }
+      };
 
-        const titleEl = $("concernTitle");
-        const subEl = $("concernSub");
-        const boxEl = $("scenarioBox");
-        const cardEl = $("matchCard");
-        if (!titleEl || !subEl || !boxEl || !cardEl) return;
+      const messMeta = {
+        dust: {
+          label: "Balcony & Road Dhool",
+          metric1: "Dust & Grit Lift",
+          reason: "Strong suction and sealed airflow pull fine balcony dust and tile-joint grit cleanly."
+        },
+        monsoon: {
+          label: "Monsoon Mud & Humidity",
+          metric1: "Monsoon Mop Care",
+          reason: "Warm mop washing and hot-air drying help prevent damp odor during humid Indian monsoons."
+        },
+        stains: {
+          label: "Kitchen Oil, Chai & Haldi",
+          metric1: "Stain Scrubbing",
+          reason: "Pressurized mopping and warm station care tackle everyday kitchen spills and dried stains."
+        },
+        hair: {
+          label: "Long Hair & Pet Shedding",
+          metric1: "ZeroTangle Performance",
+          reason: "Anti-tangle brush engineering and automated dustbin emptying cut manual roller cleanup."
+        }
+      };
 
-        titleEl.textContent = item.label;
-        subEl.textContent = item.sub;
+      const state = {
+        floor: null,
+        customFloor: "",
+        mess: null,
+        budget: 150000,
+        budgetTouched: false,
+        showRunnerUp: false
+      };
 
-        document.querySelectorAll(".concern-option").forEach((btn, i) => {
-          btn.classList.toggle("active", i === idx);
-        });
-
-        boxEl.innerHTML = `
-          ${item.svg}
-          <div class="scenario-text">
-            <b>${item.sceneTitle}</b>
-            <span>${item.desc}</span>
-          </div>
-        `;
-
-        const offset = ARC_LEN - (ARC_LEN * m.score) / 100;
-
-        cardEl.innerHTML = `
-          <div class="match-top">
-            <div class="match-img">
-              <img src="${m.img}" alt="${m.name}">
-            </div>
-            <div class="match-details">
-              <span class="match-tag">Best Match · ${m.series}</span>
-              <h4>${m.name}</h4>
-              <p>${m.spec}</p>
-              <div class="match-price">
-                <b>${inr(m.price)}</b>
-                <s>${inr(m.mrp)}</s>
-              </div>
-            </div>
-          </div>
-
-          <div class="fit-meter">
-            <div class="dial-box" title="Match Score: ${m.score}%">
-              <svg viewBox="0 0 104 58" fill="none">
-                <path d="M 11 52 A 41 41 0 0 1 93 52" stroke="#E2E8F0" stroke-width="7.5" stroke-linecap="round" />
-                <path class="dial-arc" d="M 11 52 A 41 41 0 0 1 93 52" stroke="#163E7A" stroke-width="7.5" stroke-linecap="round"
-                  stroke-dasharray="${ARC_LEN}" stroke-dashoffset="${offset}" />
-              </svg>
-              <span class="dial-value">${m.score}%</span>
-            </div>
-
-            <div class="bars-col">
-              <div class="bar-row">
-                <div class="bar-head"><span>Dust &amp; Grit Lift</span><span>${m.dust}%</span></div>
-                <div class="bar-rail"><div class="bar-fill" style="width:${m.dust}%"></div></div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-head"><span>Stain &amp; Monsoon Care</span><span>${m.stain}%</span></div>
-                <div class="bar-rail"><div class="bar-fill" style="width:${m.stain}%"></div></div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-head"><span>Hands-Free Ease</span><span>${m.ease}%</span></div>
-                <div class="bar-rail"><div class="bar-fill" style="width:${m.ease}%"></div></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="match-actions">
-            <a class="btn ghost" href="#experience">Book Demo</a>
-            <a class="btn" href="#lineup">View Model</a>
-          </div>
-        `;
+      function hasAnySelection() {
+        return Boolean(state.floor || state.mess || state.budgetTouched);
       }
 
-      const menuEl = $("concernMenu");
-      const triggerEl = $("concernTrigger");
-      const dropdownEl = $("concernDropdown");
-      if (!menuEl || !triggerEl || !dropdownEl) return;
-
-      menuEl.innerHTML = concerns.map((c, i) => `
-        <button type="button" class="concern-option ${i === 0 ? "active" : ""}" data-idx="${i}">
-          <strong>${c.label}</strong>
-          <span>${c.sub}</span>
-        </button>
-      `).join("");
-
-      document.querySelectorAll(".concern-option").forEach(btn => {
-        const idx = Number(btn.dataset.idx);
-        btn.addEventListener("mouseenter", () => {
-          if (window.innerWidth > 900) renderMatch(idx);
-        });
-        btn.addEventListener("click", () => {
-          renderMatch(idx);
-          dropdownEl.classList.remove("open");
-          triggerEl.setAttribute("aria-expanded", "false");
-        });
-      });
-
-      triggerEl.addEventListener("click", () => {
-        const open = dropdownEl.classList.toggle("open");
-        triggerEl.setAttribute("aria-expanded", String(open));
-      });
-
-      document.addEventListener("click", e => {
-        if (!dropdownEl.contains(e.target)) {
-          dropdownEl.classList.remove("open");
-          triggerEl.setAttribute("aria-expanded", "false");
+      function getActiveFloorLabel() {
+        if (!state.floor) return "Selected Floor";
+        if (state.floor === "other") {
+          return state.customFloor.trim() || "Custom Flooring";
         }
+        return floorMeta[state.floor].label;
+      }
+
+      function getActiveScenarioImage() {
+        const key = state.mess || floorFallbackImg[state.floor] || "dust";
+        return scenarioImages[key] || scenarioImages.dust;
+      }
+
+      function scoreModel(model) {
+        const messKey = state.mess || "dust";
+        const floorKey = state.floor || "marble";
+        const messScore = model.scores[messKey];
+        const floorScore = model.floorFit[floorKey];
+        const total = Math.round(messScore * 0.45 + floorScore * 0.35 + model.ease * 0.2);
+        return { total, messScore, floorScore };
+      }
+
+      function updateSliderFill() {
+        const slider = $("icBudgetSlider");
+        if (!slider) return;
+        const min = Number(slider.min);
+        const max = Number(slider.max);
+        const val = Number(slider.value);
+        const pct = ((val - min) / (max - min)) * 100;
+        slider.style.setProperty("--fill", `${pct}%`);
+        $("icBudgetDisplay").textContent = inr(val);
+      }
+
+      function renderIC() {
+        updateSliderFill();
+
+        const floorDone = state.floor !== "other" ? Boolean(state.floor) : Boolean(state.customFloor.trim());
+        const messDone = Boolean(state.mess);
+        const budgetDone = state.budgetTouched;
+
+        $("icChipFloor").classList.toggle("done", floorDone);
+        $("icChipMess").classList.toggle("done", messDone);
+        $("icChipBudget").classList.toggle("done", budgetDone);
+
+        if (state.floor) {
+          const fInfo = floorMeta[state.floor];
+          $("icFloorHint").textContent =
+            state.floor === "other" && state.customFloor.trim()
+              ? `Custom surface: ${state.customFloor.trim()}`
+              : fInfo.hint;
+
+          $("icCareTipText").textContent =
+            state.floor === "other" && state.customFloor.trim()
+              ? `For ${state.customFloor.trim()} floors: start with gentle suction and low-to-moderate moisture, using low-TDS water to avoid residue.`
+              : fInfo.tip;
+        } else {
+          $("icFloorHint").textContent = "Select a floor type";
+          $("icCareTipText").textContent =
+            "Pick your flooring type above to get surface-specific mopping and maintenance tips for Indian homes.";
+        }
+
+        const emptyBox = $("icEmptyBox");
+        const matchedBox = $("icMatchedBox");
+        if (!emptyBox || !matchedBox) return;
+
+        if (!hasAnySelection()) {
+          emptyBox.hidden = false;
+          matchedBox.hidden = true;
+          return;
+        }
+
+        emptyBox.hidden = true;
+        matchedBox.hidden = false;
+
+        const floorLabel = getActiveFloorLabel();
+        const mInfo = state.mess ? messMeta[state.mess] : messMeta.dust;
+        const sceneImg = getActiveScenarioImage();
+
+        const affordable = models.filter(m => m.price <= state.budget);
+        const pool = affordable.length > 0 ? affordable : [models[0]];
+
+        const ranked = pool
+          .map(m => ({ model: m, metrics: scoreModel(m) }))
+          .sort((a, b) => b.metrics.total - a.metrics.total);
+
+        if (state.showRunnerUp && ranked.length < 2) {
+          state.showRunnerUp = false;
+        }
+
+        const active = state.showRunnerUp && ranked[1] ? ranked[1] : ranked[0];
+        const { model, metrics } = active;
+
+        const altBtn = $("icAltBtn");
+        if (ranked.length > 1) {
+          altBtn.hidden = false;
+          altBtn.textContent = state.showRunnerUp ? "Back to Best Match" : "Compare Runner-Up";
+        } else {
+          altBtn.hidden = true;
+        }
+
+        $("icMatchBadge").textContent =
+          affordable.length === 0
+            ? `Closest Within Budget · ${model.series}`
+            : state.showRunnerUp
+              ? `Runner-Up Pick · ${model.series}`
+              : `Recommended For You · ${model.series}`;
+
+        $("icModelName").textContent = model.name;
+        $("icModelSpecs").textContent = model.specs;
+        $("icModelPrice").textContent = inr(model.price);
+        $("icModelMrp").textContent = inr(model.mrp);
+
+        const parts = [
+          state.floor ? floorLabel : null,
+          state.mess ? mInfo.label : null,
+          `Up to ${inr(state.budget)}`
+        ].filter(Boolean);
+
+        $("icStageTag").textContent = `Matched: ${parts.join(" · ")}`;
+        $("icSeriesTag").textContent = model.tierTag;
+
+        const imgEl = $("icModelImage");
+        if (imgEl.src !== sceneImg.url) {
+          imgEl.src = sceneImg.url;
+        }
+        imgEl.alt = `${model.name} — ${sceneImg.alt}`;
+
+        $("icFitSummary").textContent =
+          `For ${floorLabel.toLowerCase()} and ${mInfo.label.toLowerCase()} (budget up to ${inr(state.budget)}): ${mInfo.reason}`;
+
+        $("icMatchPct").textContent = `${metrics.total}%`;
+        const arc = $("icGaugeArc");
+        const totalArcLen = 126;
+        const offset = totalArcLen - (metrics.total / 100) * totalArcLen;
+        arc.setAttribute("stroke-dashoffset", offset.toFixed(1));
+
+        $("icMetric1Label").textContent = mInfo.metric1;
+        $("icMetric1Val").textContent = `${metrics.messScore}%`;
+        $("icMetric1Bar").style.width = `${metrics.messScore}%`;
+
+        $("icMetric2Label").textContent = `${floorLabel} Fit`;
+        $("icMetric2Val").textContent = `${metrics.floorScore}%`;
+        $("icMetric2Bar").style.width = `${metrics.floorScore}%`;
+
+        $("icMetric3Label").textContent = "Hands-Free Maintenance";
+        $("icMetric3Val").textContent = `${model.ease}%`;
+        $("icMetric3Bar").style.width = `${model.ease}%`;
+      }
+
+      const customBox = $("icCustomFloorBox");
+      const customInput = $("icCustomFloorInput");
+
+      document.querySelectorAll(".ic-floor-pill").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".ic-floor-pill").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          state.floor = btn.dataset.floor;
+          state.showRunnerUp = false;
+
+          if (state.floor === "other") {
+            customBox.classList.add("visible");
+            customInput.focus();
+          } else {
+            customBox.classList.remove("visible");
+          }
+          renderIC();
+        });
       });
 
-      renderMatch(0);
+      customInput.addEventListener("input", e => {
+        state.customFloor = e.target.value;
+        renderIC();
+      });
+
+      document.querySelectorAll(".ic-mess-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".ic-mess-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          state.mess = btn.dataset.mess;
+          state.showRunnerUp = false;
+          renderIC();
+        });
+      });
+
+      $("icBudgetSlider").addEventListener("input", e => {
+        state.budget = Number(e.target.value);
+        state.budgetTouched = true;
+        state.showRunnerUp = false;
+        renderIC();
+      });
+
+      $("icAltBtn").addEventListener("click", () => {
+        state.showRunnerUp = !state.showRunnerUp;
+        renderIC();
+      });
+
+      $("icResetBtn").addEventListener("click", () => {
+        state.floor = null;
+        state.customFloor = "";
+        state.mess = null;
+        state.budget = 150000;
+        state.budgetTouched = false;
+        state.showRunnerUp = false;
+
+        document.querySelectorAll(".ic-floor-pill").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".ic-mess-btn").forEach(b => b.classList.remove("active"));
+        customInput.value = "";
+        customBox.classList.remove("visible");
+        $("icBudgetSlider").value = 150000;
+        renderIC();
+      });
+
+      renderIC();
     })();
 
     // Lightweight Lenis Smooth Scroll Setup
