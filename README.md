@@ -36,7 +36,6 @@ To preview locally:
 ```text
 ecovacs-india/
 ├── index.html                     # Primary entrypoint for web servers & GitHub Pages
-├── gemini-code-1795193672568.html # Master template
 ├── Ecovacs_Banner.jpg             # Desktop panoramic launch banner
 ├── Ecovacs_M.jpg                  # Mobile portrait launch banner
 └── README.md                      # Documentation
