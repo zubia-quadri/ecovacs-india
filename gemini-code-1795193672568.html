@@ -813,6 +813,20 @@
       box-shadow: 0 0 0 3px rgba(37, 99, 235, .12);
     }
 
+    .field-group input.is-invalid {
+      border-color: #DC2626 !important;
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, .15) !important;
+    }
+
+    .field-error-msg {
+      display: none;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: #DC2626;
+      margin-top: 2px;
+      line-height: 1.3;
+    }
+
     .field-group input.brand-readonly {
       background: #EEF3FA;
       border-color: #D8E2F0;
@@ -2423,7 +2437,8 @@
               </div>
               <div class="field-group">
                 <label for="custPhone">Contact number</label>
-                <input id="custPhone" type="tel" maxlength="10" placeholder="10-digit mobile number" required>
+                <input id="custPhone" type="tel" maxlength="10" inputmode="numeric" pattern="[0-9]{10}" placeholder="10-digit mobile number" required autocomplete="tel">
+                <span class="field-error-msg" id="phoneError" role="alert">This format does not support. Use numbers.</span>
               </div>
               <div class="field-group">
                 <label for="city">City hub</label>
@@ -2795,8 +2810,42 @@
     $("menu").onclick = () => $("nav").classList.toggle("open");
     document.querySelectorAll("#nav a").forEach(a => a.onclick = () => $("nav").classList.remove("open"));
 
+    const phoneInput = $("custPhone");
+    const phoneError = $("phoneError");
+
+    phoneInput.addEventListener("input", function () {
+      const raw = this.value;
+      if (/[^0-9]/.test(raw)) {
+        this.value = raw.replace(/[^0-9]/g, "").slice(0, 10);
+        phoneError.style.display = "block";
+        this.classList.add("is-invalid");
+      } else {
+        if (this.value.length === 10 || this.value.length === 0) {
+          phoneError.style.display = "none";
+          this.classList.remove("is-invalid");
+        }
+      }
+    });
+
+    phoneInput.addEventListener("blur", function () {
+      if (this.value && this.value.length < 10) {
+        phoneError.style.display = "block";
+        this.classList.add("is-invalid");
+      }
+    });
+
     $("demoForm").onsubmit = e => {
       e.preventDefault();
+      const phoneVal = phoneInput.value.trim();
+      if (!/^\d{10}$/.test(phoneVal)) {
+        phoneError.style.display = "block";
+        phoneInput.classList.add("is-invalid");
+        phoneInput.focus();
+        alert("This format does not support. Use numbers.");
+        return;
+      }
+      phoneError.style.display = "none";
+      phoneInput.classList.remove("is-invalid");
       $("demoSubmit").textContent = "Demo Booking Confirmed ✓";
       $("demoSubmit").style.background = "#15803D";
       $("demoStatus").textContent = `Session reserved for ${$("city").value}. Our team will call shortly.`;
